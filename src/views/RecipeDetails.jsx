@@ -49,7 +49,7 @@ export default function RecipeDetails() {
             <h3>You are <i>all done</i>!</h3>
             <h4>Poftă bună!</h4>
             <h6>(this means <i>"Have a nice meal!"</i> in Romanian)</h6>
-            <Link to="/examDishDelights/recipes"><i>Back To Recipes</i></Link>
+            <Link to="/recipes"><i>Back To Recipes</i></Link>
         </div>
     )
 }
