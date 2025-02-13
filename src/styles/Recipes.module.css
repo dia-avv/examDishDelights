@@ -1,0 +1,51 @@
+.recipesList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.recipeContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 3px solid #FF7F50;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+    background-color: #fff;
+}
+
+.recipeContainer:hover {
+    transform: scale(1.05);
+}
+
+.recipeContainer img {
+    width: 300px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.recipeText {
+    text-align: left;
+}
+
+/* --- Select Box --- */
+
+select {
+    padding: 5px;
+    border: 2px solid coral;
+    border-radius: 5px;
+    color: #2d2d2d;
+    transition: border-color 0.3s ease;
+    margin-bottom: 30px;
+}
+
+select:focus {
+    background-color: #FF7F50;
+    color: #fff;
+}
