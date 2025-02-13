@@ -28,9 +28,10 @@
     height: 240px;
     object-fit: cover;
     border-radius: 5px;
+    align-self: center;
 }
 
-.recipeText {
+.recipeText p {
     text-align: left;
 }
 

@@ -1,16 +1,14 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { recipes } from "../recipesInformation";
 import styles from '../styles/RecipeDetails.module.css';
 import { Link } from "react-router-dom";
 
 export default function RecipeDetails() {
     const {recipeId} = useParams();
-    const navigate = useNavigate();
     const recipe = recipes.find(r => r.id === Number(recipeId));
 
     if (!recipe) {
-        navigate ("*");
-        return null;
+        return <h1>Recipe Not Found</h1>
     }
 
     const ingredients = recipe.ingredients;
@@ -49,7 +47,7 @@ export default function RecipeDetails() {
             <h3>You are <i>all done</i>!</h3>
             <h4>Poftă bună!</h4>
             <h6>(this means <i>"Have a nice meal!"</i> in Romanian)</h6>
-            <Link to="/recipes"><i>Back To Recipes</i></Link>
+            <Link to="/examDishDelights/recipes"><i>Back To Recipes</i></Link>
         </div>
     )
 }
