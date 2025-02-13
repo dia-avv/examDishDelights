@@ -25,7 +25,7 @@ export default function About() {
             </div>
             <h3>Join the Dish Delights Community!</h3>
             <p>We’re more than just a recipe website—we’re a <i>community</i> of food lovers who enjoy experimenting in the kitchen and sharing our passion for great meals. So, <i>start exploring</i>, <i>get cooking</i>, and don’t forget to <i>add your own</i> delightful dishes to inspire others!</p>
-            <Link to="/favorites"><button>Create A Recipe</button></Link>
+            <Link to="favorites"><button>Create A Recipe</button></Link>
             <h4 style={{marginTop: "40px", color: "coral"}}>Happy Cooking!</h4>
         </div>
     )
